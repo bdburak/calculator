@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Burak DOGUCU">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="background">
+
+    </div>
+
+
+    <div class="container">
+      <h1>CALCULATOR</h1>
+
+      <div class="row text">
+        <input type="text" id="input" name=""  value="0" >
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" onclick="DeleteAll()" id="c" name="button">C</button>
+        </div>
+        <div class="col del">
+          <button type="button" onclick="DeleteLast()" id="d" name="button">DEL</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('+')" id="+" name="button">+</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" onclick="Display('9')" id="9" name="button">9</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('8')" id="8" name="button">8</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('7')" id="7" name="button">7</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('-')" id="-" name="button">-</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" onclick="Display('6')" id="6" name="button">6</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('5')" id="5" name="button">5</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('4')" id="4" name="button">4</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('*')" id="*" name="button">*</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <button type="button" onclick="Display('3')" id="3" name="button">3</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('2')" id="2" name="button">2</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('1')" id="1" name="button">1</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('/')" id="/" name="button">/</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col0">
+          <button type="button" onclick="Display('0')" id="0" name="button">0</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Display('.')" id="." name="button">.</button>
+        </div>
+        <div class="col">
+          <button type="button" onclick="Eval()" id="=" name="button">=</button>
+        </div>
+      </div>
+      <script src="script.js" charset="utf-8"></script>
+    </div>
+  </body>
+</html>
